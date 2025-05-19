@@ -23,24 +23,16 @@ export default function Home() {
         id="home"
         className="relative bg-[#0f172a] text-white min-h-screen flex flex-col md:flex-row items-center justify-center px-4 md:px-10 pb-32 md:pb-10"
       >
-        {/* Sidebar - Mobile (bottom) */}
         <div className="md:hidden fixed bottom-0 left-0 w-full bg-[#0f172a] border-t border-gray-700 z-50">
           <Sidebar />
         </div>
-
-        {/* Sidebar - Desktop (left) */}
         <div className="hidden md:block">
           <Sidebar />
         </div>
-
-        {/* Main Content */}
-        <div className="flex flex-col lg:flex-row gap-10 md:gap-10 gap-y-10 max-w-6xl w-full items-center justify-between mt-10 md:mt-0">
-          {/* Profile Card */}
+        <div className="flex flex-col lg:flex-row gap-10 md:gap-10 gap-y-10 max-w-7xl w-full items-center justify-between mt-10 md:mt-0">
           <div className="w-full md:w-auto justify-center flex items-center max-w-xs md:max-w-sm">
             <ProfileCard />
           </div>
-
-          {/* Center Text Section */}
           <div data-aos="fade-down" className="flex-1 w-full max-w-xl">
             <div className="gap-5 flex flex-col items-center md:items-start text-center md:text-left">
               <h1 className="text-5xl md:text-6xl font-bold text-cyan-300">
@@ -75,7 +67,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Stats Card */}
           <div className="w-full md:w-auto max-w-xs md:max-w-sm justify-center flex items-center">
             <StatsCard />
           </div>
