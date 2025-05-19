@@ -11,7 +11,7 @@ export default function Sidebar() {
 
   return (
     <>
-      <div className="hidden lg:flex fixed left-6 top-1/2 -translate-y-1/2 flex-col items-center gap-4 z-50 border-2 border-cyan-500 rounded-full px-3 py-7 bg-[#0f172a]">
+      <div className="hidden lg:flex fixed left-5 top-1/2 -translate-y-1/2 flex-col items-center gap-4 z-50 border-2 border-cyan-500 rounded-full px-3 py-7 bg-[#0f172a]">
         {sectionIds.map((sectionId, i) => (
           <div key={i} className="relative group">
             <button

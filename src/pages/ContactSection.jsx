@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FiPhone, FiMail, FiMapPin } from "react-icons/fi";
-import { FaTwitter, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { FaTwitter, FaFacebookF, FaLinkedinIn, FaLightbulb, FaGithub } from "react-icons/fa";
 
 const ContactSection = () => {
     const [formData, setFormData] = useState({
@@ -76,21 +76,24 @@ const ContactSection = () => {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                     <div>
-                        <h3 className="text-2xl font-bold mb-4 pl-24">Send Me An Email</h3>
-                        <p className="text-gray-300 mb-4 pl-24">
+                        <h3 className="text-2xl font-bold mb-4 md:pl-24">Send Me An Email</h3>
+                        <p className="text-gray-300 mb-4 md:pl-24">
                             Feel free to get in touch with me.<br />
                             I am always open to discussing new projects or creative ideas.
                         </p>
-                        <h4 className="text-xl font-semibold mt-8 mb-3 pl-24">Follow Me</h4>
-                        <div className="flex gap-4 pl-24">
-                            <a href="#" className="bg-[#2e2e2e] hover:bg-cyan-500 transition p-3 rounded-full">
+                        <h4 className="text-xl font-semibold mt-8 mb-3 md:pl-24">Follow Me</h4>
+                        <div className="flex gap-4 md:pl-24">
+                            <a href="https://www.facebook.com/kapil.sanghani.566" target="_black" className="bg-[#2e2e2e] hover:bg-cyan-500 transition p-3 rounded-full">
                                 <FaFacebookF />
                             </a>
-                            <a href="#" className="bg-[#2e2e2e] hover:bg-cyan-500 transition p-3 rounded-full">
+                            <a href="https://x.com/Kapilsanghani2" target="_black" className="bg-[#2e2e2e] hover:bg-cyan-500 transition p-3 rounded-full">
                                 <FaTwitter />
                             </a>
-                            <a href="#" className="bg-[#2e2e2e] hover:bg-cyan-500 transition p-3 rounded-full">
+                            <a href="https://www.linkedin.com/in/kapil-sanghani-2a4358233/" target="_black" className="bg-[#2e2e2e] hover:bg-cyan-500 transition p-3 rounded-full">
                                 <FaLinkedinIn />
+                            </a>
+                            <a href="https://github.com/kapil238" target="_black" className="bg-[#2e2e2e] hover:bg-cyan-500 transition p-3 rounded-full">
+                                <FaGithub />
                             </a>
                         </div>
                     </div>
@@ -134,7 +137,7 @@ const ContactSection = () => {
                         ></textarea>
                         <button
                             type="submit"
-                            className="bg-cyan-500 hover:bg-cyan-700 transition p-3 font-bold rounded text-white"
+                            className="bg-cyan-500 hover:bg-cyan-700 transition p-3 font-bold rounded text-white mb-8"
                         >
                             SEND MESSAGE
                         </button>
