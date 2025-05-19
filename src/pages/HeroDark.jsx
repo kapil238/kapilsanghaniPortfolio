@@ -21,7 +21,7 @@ export default function Home() {
 
       <div
         id="home"
-        className="relative bg-[#0f172a] text-white min-h-screen flex flex-col md:flex-row items-center justify-center px-4 md:px-10 pb-32 md:pb-0"
+        className="relative bg-[#0f172a] text-white min-h-screen flex flex-col md:flex-row items-center justify-center px-4 md:px-10 pb-32 md:pb-10"
       >
         {/* Sidebar - Mobile (bottom) */}
         <div className="md:hidden fixed bottom-0 left-0 w-full bg-[#0f172a] border-t border-gray-700 z-50">
@@ -34,7 +34,7 @@ export default function Home() {
         </div>
 
         {/* Main Content */}
-        <div className="flex flex-col md:flex-row gap-10 md:gap-10 gap-y-10 max-w-6xl w-full items-center justify-between mt-10 md:mt-0">
+        <div className="flex flex-col lg:flex-row gap-10 md:gap-10 gap-y-10 max-w-6xl w-full items-center justify-between mt-10 md:mt-0">
           {/* Profile Card */}
           <div className="w-full md:w-auto justify-center flex items-center max-w-xs md:max-w-sm">
             <ProfileCard />
