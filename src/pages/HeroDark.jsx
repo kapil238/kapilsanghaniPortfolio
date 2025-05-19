@@ -61,9 +61,18 @@ export default function Home() {
                 looking for a developer who gets stuff done—let's talk!
               </p>
 
-              <button id='contact' className="mt-6 bg-cyan-500 text-black px-6 py-2 rounded-full hover:bg-cyan-400 transition w-full sm:w-auto">
+              <button
+                onClick={() => {
+                  const section = document.getElementById('contact');
+                  if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+                className="mt-6 bg-cyan-500 text-black px-6 py-2 rounded-full hover:bg-cyan-400 transition w-full sm:w-auto"
+              >
                 Let’s Talk 💬
               </button>
+
             </div>
           </div>
 
