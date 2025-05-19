@@ -30,13 +30,13 @@ export default function Home() {
           <Sidebar />
         </div>
         <div className="flex flex-col lg:flex-row gap-10 md:gap-10 gap-y-10 max-w-7xl w-full items-center justify-between mt-10 md:mt-0">
-          <div className="w-full md:w-auto justify-center flex items-center max-w-md md:max-w-md pl-12">
+          <div className="w-full md:w-auto justify-center flex items-center max-w-md md:max-w-md md:pl-12">
             <ProfileCard />
           </div>
           <div data-aos="fade-down" className="flex-1 w-full max-w-md">
             <div className="gap-5 flex flex-col items-center md:items-start text-center md:text-left">
               <h1 className="text-5xl md:text-6xl font-bold text-cyan-300">
-                <p className="text-cyan-400 text-md font-bold mt-4">{`<>`}</p>
+                <p className="text-cyan-400 text-md font-bold mt-4 text-left">{`<>`}</p>
                 <div className="min-h-[60px]">
                   <Typewriter
                     words={['Developer']}
@@ -48,7 +48,7 @@ export default function Home() {
                     delaySpeed={1000}
                   />
                 </div>
-                <p className="text-cyan-400 text-md font-bold mt-4">{`</>`}</p>
+                <p className="text-cyan-400 text-md font-bold mt-4 text-left">{`</>`}</p>
               </h1>
 
               <h2 className="mt-4 text-2xl md:text-3xl font-semibold break-words">
