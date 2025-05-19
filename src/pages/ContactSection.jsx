@@ -55,19 +55,19 @@ const ContactSection = () => {
                     <span className="text-cyan-400">In Touch</span>
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 text-center">
-                    <div className="bg-[#2e2e2e] p-6 rounded-md flex flex-col items-center">
+                    <div className="bg-[#1e293b] p-6 rounded-md flex flex-col items-center border-b-4 border-cyan-500">
                         <div className="bg-cyan-500 p-3 rounded-full mb-4">
                             <FiPhone size={24} />
                         </div>
                         <p className="text-lg font-mono">+91 94282 44569</p>
                     </div>
-                    <div className="bg-[#2e2e2e] p-6 rounded-md flex flex-col items-center">
+                    <div className="bg-[#1e293b] p-6 rounded-md flex flex-col items-center border-b-4 border-cyan-500">
                         <div className="bg-cyan-500 p-3 rounded-full mb-4">
                             <FiMail size={24} />
                         </div>
                         <p className="text-lg font-mono">kapilsanghani111@gmail.com</p>
                     </div>
-                    <div className="bg-[#2e2e2e] p-6 rounded-md flex flex-col items-center">
+                    <div className="bg-[#1e293b] p-6 rounded-md flex flex-col items-center border-b-4 border-cyan-500">
                         <div className="bg-cyan-500 p-3 rounded-full mb-4">
                             <FiMapPin size={24} />
                         </div>
@@ -103,7 +103,7 @@ const ContactSection = () => {
                             type="text"
                             name="name"
                             placeholder="YOUR NAME"
-                            className="bg-[#2e2e2e] p-3 rounded text-white placeholder-gray-400"
+                            className="p-3 rounded text-white placeholder-gray-400 border-b-3 focus:outline-none focus:border-cyan-500 focus:rounded-b-md"
                             value={formData.name}
                             onChange={handleChange}
                             required
@@ -112,7 +112,7 @@ const ContactSection = () => {
                             type="text"
                             name="subject"
                             placeholder="SUBJECT"
-                            className="bg-[#2e2e2e] p-3 rounded text-white placeholder-gray-400"
+                            className="p-3 rounded text-white placeholder-gray-400 border-b-3 focus:outline-none focus:border-cyan-500 focus:rounded-b-md"
                             value={formData.subject}
                             onChange={handleChange}
                             required
@@ -121,7 +121,7 @@ const ContactSection = () => {
                             type="email"
                             name="email"
                             placeholder="YOUR EMAIL"
-                            className="bg-[#2e2e2e] p-3 rounded text-white placeholder-gray-400"
+                            className="p-3 rounded text-white placeholder-gray-400 border-b-3 focus:outline-none focus:border-cyan-500 focus:rounded-b-md"
                             value={formData.email}
                             onChange={handleChange}
                             required
@@ -130,7 +130,7 @@ const ContactSection = () => {
                             rows="5"
                             name="message"
                             placeholder="YOUR MESSAGE"
-                            className="bg-[#2e2e2e] p-3 rounded text-white placeholder-gray-400"
+                            className="p-3 rounded text-white placeholder-gray-400 border-b-3 focus:outline-none focus:border-cyan-500 focus:rounded-b-md"
                             value={formData.message}
                             onChange={handleChange}
                             required
